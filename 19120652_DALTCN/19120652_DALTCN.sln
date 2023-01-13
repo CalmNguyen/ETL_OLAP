@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32929.386
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "19120652_DALTCN", "canhan1\19120652_DALTCN.dtproj", "{A5F0EE46-CC11-4340-8577-446C38854A15}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Azure|Default = Azure|Default
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5F0EE46-CC11-4340-8577-446C38854A15}.Azure|Default.ActiveCfg = Azure
+		{A5F0EE46-CC11-4340-8577-446C38854A15}.Azure|Default.Build.0 = Azure
+		{A5F0EE46-CC11-4340-8577-446C38854A15}.Development|Default.ActiveCfg = Development
+		{A5F0EE46-CC11-4340-8577-446C38854A15}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {19D165DA-8E32-45AD-94D6-A0BD1B57A344}
+	EndGlobalSection
+EndGlobal

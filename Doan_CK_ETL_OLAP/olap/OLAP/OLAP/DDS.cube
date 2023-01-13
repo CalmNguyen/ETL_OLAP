@@ -1,0 +1,591 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="6a76f931-e091-45d3-aa29-101247fa8be2" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DDS</ID>
+  <Name>DDS</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="14" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="2757" scrolltop="-864" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="55" x="12188" y="12735" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900180380100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Phu_Group_DDS" left="20" top="14409" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2240" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000c0080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Phu_Group_DDS" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="City_DDS" left="20" top="9416" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="2593" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000210a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_City_DDS" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Fact_ThongKe" left="13915" top="8357" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="3069" height="4357" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000fd0b000005110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Fact_ThongKe" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Vaccines_By_Age_PHU" left="15262" top="0" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="5080" height="2946" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000d8130000820b0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Vaccines_By_Age_PHU" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Ongoing_Outbreaks_DDS" left="20" top="0" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="4621" height="3298" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00000d120000e20c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Ongoing_Outbreaks_DDS" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Phu_DDS" left="5420" top="8358" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="4904" height="4710" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00002813000066120000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Phu_DDS" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimDate" left="13324" top="15114" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="4251" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00009b10000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimDate" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="fact_outbreak_group" left="7641" top="0" logicalid="8" controlid="8" masterid="0" hint1="0" hint2="0" width="6770" height="7147" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000721a0000eb1b0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_fact_outbreak_group" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Fact_Deceased_Age_Year" left="22788" top="2922" logicalid="9" controlid="9" masterid="0" hint1="0" hint2="0" width="3000" height="3298" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000e20c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Fact_Deceased_Age_Year" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="1121" top="11709" logicalid="10" controlid="10" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__City_DDS__NgayCa__6754599E]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="2" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="1520" y="14409" />
+              <point x="1520" y="12009" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="2720" top="10313" logicalid="11" controlid="11" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Phu_DDS__City_ID__693CA210]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="6" sourceattachpoint="15" destattachpoint="26" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="3020" y="10712" />
+              <point x="4220" y="10712" />
+              <point x="4220" y="10713" />
+              <point x="5420" y="10713" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="15050" top="12414" logicalid="12" controlid="12" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Fact_Thon__NgayI__1C873BEC]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="3" sourceattachpoint="6" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="15449" y="15114" />
+              <point x="15449" y="12714" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="10024" top="8585" logicalid="13" controlid="13" masterid="0" hint1="0" hint2="0" width="4191" height="878" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Fact_ThongKe-Phu_DDS]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="3" sourceattachpoint="21" destattachpoint="10" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="10324" y="9063" />
+              <point x="12119" y="9063" />
+              <point x="12119" y="8885" />
+              <point x="13915" y="8885" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>2757</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-864</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>55</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="a46c4433-b8a3-4d3d-859e-38a6c385029e">
+      <ID>City DDS</ID>
+      <Name>City DDS</Name>
+      <DimensionID>City DDS</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4ef91233-8039-49de-a68b-3ce3192b2e62">
+          <AttributeID>City ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="30cde984-d3b9-4f9c-b925-da3266aabfb5">
+          <AttributeID>GROUP ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="36d4dcda-0790-467b-b489-e430c387ef74">
+      <ID>Phu Group DDS</ID>
+      <Name>Phu Group DDS</Name>
+      <DimensionID>Phu Group DDS</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="004d7a09-6f32-45de-bee1-46a082cc52d8">
+          <AttributeID>GROUP ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="c11bc532-1899-4d22-839d-2ae83c410cf3">
+      <ID>Dim Date</ID>
+      <Name>Dim Date</Name>
+      <DimensionID>Dim Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e6f28080-6a6e-4127-867a-506e5f2256a2">
+          <AttributeID>Date Key</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="71176488-4223-4ed2-b684-e5a32db72b83">
+      <ID>Fact Deceased Age Year</ID>
+      <Name>Fact Deceased Age Year</Name>
+      <DimensionID>Fact Deceased Age Year</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="a987f960-2d79-4758-ae64-03384d9d6e96">
+          <AttributeID>ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="d808dacd-581d-4cb2-8720-8094b54ee09c">
+      <ID>Fact Outbreak Group</ID>
+      <Name>Fact Outbreak Group</Name>
+      <DimensionID>Fact Outbreak Group</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="6e446dcf-8cfe-4176-9f9d-f458a82f405b">
+          <AttributeID>Fact ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="e03a4e17-12f6-417e-a049-d7b2f888279e">
+      <ID>Fact Thong Ke</ID>
+      <Name>Fact Thong Ke</Name>
+      <DimensionID>Fact Thong Ke</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="caeabd40-61d7-45ee-b8c0-bebdb23e4f98">
+          <AttributeID>Fact ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c315446d-ca7f-4d0b-a910-b1d224c94634">
+          <AttributeID>Ngay ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="785f50c5-8bfb-42e1-97cc-5b2d27d571c6">
+      <ID>Ongoing Outbreaks DDS</ID>
+      <Name>Ongoing Outbreaks DDS</Name>
+      <DimensionID>Ongoing Outbreaks DDS</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="235c212e-9a20-49b2-acf6-701ebfd20c26">
+          <AttributeID>ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="85d49831-ff14-49d8-be94-c246bb8aa0b3">
+      <ID>Vaccines By Age PHU</ID>
+      <Name>Vaccines By Age PHU</Name>
+      <DimensionID>Vaccines By Age PHU</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="6bb2813a-db57-458e-8f5a-e77ea72bc457">
+          <AttributeID>ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="0b802909-e321-4d41-a4e0-b69ea64b2271">
+      <ID>City DDS - GROUP</ID>
+      <Name>City DDS - GROUP</Name>
+      <DimensionID>Phu Group DDS</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="625f80fc-3bd5-4f58-86f9-f66b6321c7e4">
+          <AttributeID>GROUP ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="5c00d0a7-99c5-4069-a7c3-d0777816aa72">
+      <ID>Fact Deceased Age Year</ID>
+      <Name>Fact Deceased Age Year</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="7219d7d5-6dc5-4e54-b450-64f857da4d5f">
+          <ID>So Nguoi</ID>
+          <Name>So Nguoi</Name>
+          <Source dwd:design-time-name="4e3bef51-c712-43f1-a9b3-4956fe8a0392">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f2952725-07e1-4e39-ac51-5ea290a362f3">
+              <TableID>dbo_Fact_Deceased_Age_Year</TableID>
+              <ColumnID>So_Nguoi</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f99ed33f-cbb2-4b2b-8b1f-b4b9dda7a5a6">
+          <ID>Fact Deceased Age Year Count</ID>
+          <Name>Fact Deceased Age Year Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="38cd13b4-59c1-4004-af40-fe4078d187b9">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="25555ff3-56ab-4e5b-9369-582b35fa0243">
+              <TableID>dbo_Fact_Deceased_Age_Year</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="3e9a05c9-1617-44a4-957c-53178f617ac5">
+          <CubeDimensionID>Fact Deceased Age Year</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e63c4ebc-8ca8-40c8-adb4-da0107268954">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c56dc908-b55e-4fef-a8e4-93e83a846612">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="732ff739-56f1-41b2-870b-cf5608fdf580">
+                    <TableID>dbo_Fact_Deceased_Age_Year</TableID>
+                    <ColumnID>ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="36e9c4ad-7c0d-4c58-a41f-7aba73e80532">
+      <ID>Fact Outbreak Group</ID>
+      <Name>Fact Outbreak Group</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="b8d09e52-bd03-4790-8578-4bdc37207d71">
+          <ID>Number Ongoing Outbreaks</ID>
+          <Name>Number Ongoing Outbreaks</Name>
+          <Source dwd:design-time-name="1a233a04-4776-44bb-a443-b48bf0bb5746">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="7cca3908-9289-4d37-a288-074be00c1d27">
+              <TableID>dbo_fact_outbreak_group</TableID>
+              <ColumnID>number_ongoing_outbreaks</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="cec1e9cb-62b9-49dc-9804-8bc235f5d9f5">
+          <ID>Deceased</ID>
+          <Name>Deceased</Name>
+          <Source dwd:design-time-name="aa7ab913-0312-411e-a4cf-b0d7ca233251">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="36d89d05-d9e0-4a88-a43e-e37dca6f0411">
+              <TableID>dbo_fact_outbreak_group</TableID>
+              <ColumnID>Deceased</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="5b8661d2-709f-4249-9172-7a9a6a5a513d">
+          <ID>Infected</ID>
+          <Name>Infected</Name>
+          <Source dwd:design-time-name="087e8fd2-1c07-44a3-aa70-6e1d7cd5742a">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a652ea29-f850-42ea-b6d5-7465218f87f6">
+              <TableID>dbo_fact_outbreak_group</TableID>
+              <ColumnID>Infected</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="74d6d41a-d96c-4c95-9d2a-159650d4b796">
+          <ID>Fact Outbreak Group Count</ID>
+          <Name>Fact Outbreak Group Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="6c2db239-6082-4860-a7c6-a933a084d2fe">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="8945c2ab-1025-4daa-a4d8-75dcd083d7a6">
+              <TableID>dbo_fact_outbreak_group</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="f9af971d-be79-4999-8c11-8a1b98e00394">
+          <CubeDimensionID>Fact Outbreak Group</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2b69c571-cbb2-4dfd-a647-5a5edcf9eaf0">
+              <AttributeID>Fact ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="669ebd45-9093-431a-9eeb-c811424bc533">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e4036bfb-bc58-4957-8d72-0c5c462918b9">
+                    <TableID>dbo_fact_outbreak_group</TableID>
+                    <ColumnID>Fact_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="92d308fa-02d2-4a7b-9aea-b1e0e5ef86bc">
+      <ID>Fact Thong Ke</ID>
+      <Name>Fact Thong Ke</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="eb8aedf8-1ab3-43a3-93b2-f5ab2aaf06ce">
+          <ID>PHU ID</ID>
+          <Name>PHU ID</Name>
+          <Source dwd:design-time-name="4b38bb1c-c1a8-46e4-9e00-86222829e7de">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="7ea6d748-1df3-4901-8b43-eae02d2123cf">
+              <TableID>dbo_Fact_ThongKe</TableID>
+              <ColumnID>PHU_ID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="fb0892ed-ed4a-4449-8f37-cf4ab8b3ede7">
+          <ID>Deceased - Fact Thong Ke</ID>
+          <Name>Deceased - Fact Thong Ke</Name>
+          <Source dwd:design-time-name="0232def0-2645-4c7f-9c2e-87bd047f20a1">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2b485679-4350-4502-8e6d-ee395dde8953">
+              <TableID>dbo_Fact_ThongKe</TableID>
+              <ColumnID>Deceased</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="1852728e-a663-4c5d-aa11-a46a0bd3ddb9">
+          <ID>Active</ID>
+          <Name>Active</Name>
+          <Source dwd:design-time-name="7e8150fe-a47c-4520-aa78-4bef5eb31242">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8f9a3571-e38c-4de1-8c7f-299b5b3cb21c">
+              <TableID>dbo_Fact_ThongKe</TableID>
+              <ColumnID>Active</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="063a6c58-9452-449c-a359-ec11c77e1163">
+          <ID>Infected - Fact Thong Ke</ID>
+          <Name>Infected - Fact Thong Ke</Name>
+          <Source dwd:design-time-name="cc647089-2552-4a89-998f-ee76ed4d4fa9">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b09b4d21-bced-4a3f-a4cf-832caa740329">
+              <TableID>dbo_Fact_ThongKe</TableID>
+              <ColumnID>Infected</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="5d913121-bd2a-4fd8-bdcb-6fb9d3f8cbbb">
+          <ID>Recovered</ID>
+          <Name>Recovered</Name>
+          <Source dwd:design-time-name="97057c0c-d235-403d-b9a5-d2d8f9527006">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8b3a9b7e-fec1-489c-a61d-8955faaa65a8">
+              <TableID>dbo_Fact_ThongKe</TableID>
+              <ColumnID>Recovered</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="1172f196-5d4c-41e0-a1d0-9635fb1463f7">
+          <ID>Fact Thong Ke Count</ID>
+          <Name>Fact Thong Ke Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="c1c6f8ad-66b8-404d-a30a-cb158efa42a7">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="57b1ef38-2ff6-4369-93a7-e4cfb10810e3">
+              <TableID>dbo_Fact_ThongKe</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="4796013d-2ede-4c80-bc0d-cadc12c09fb3">
+          <CubeDimensionID>Fact Thong Ke</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f4870667-5dbf-47fd-8370-f082e56d9faf">
+              <AttributeID>Fact ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="dabd16f8-6c02-4ef3-aa63-d4c69ab8e37b">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="322ec938-f217-4584-910a-7fb6dfb1d44d">
+                    <TableID>dbo_Fact_ThongKe</TableID>
+                    <ColumnID>FactID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6e3d83f5-7b76-4030-b417-1c66109db600">
+          <CubeDimensionID>Dim Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7e8e6d5a-9223-4c01-a3e8-45e05d442c03">
+              <AttributeID>Date Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="179d361d-e31c-4f75-992c-074174e566da">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ec8c8e58-1ff4-4333-a7e9-b9c9be55b606">
+                    <TableID>dbo_Fact_ThongKe</TableID>
+                    <ColumnID>NgayID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="1faab486-0953-4251-b3a0-ddf2e139a68f">
+    <DataSourceViewID>DDS</DataSourceViewID>
+  </Source>
+</Cube>

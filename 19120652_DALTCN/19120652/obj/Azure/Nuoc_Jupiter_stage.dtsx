@@ -1,0 +1,734 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="10/18/2022 10:36:24 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-DT03IGN"
+  DTS:CreatorName="DESKTOP-DT03IGN\Calm"
+  DTS:DTSID="{49013B25-5BA0-4D47-AB37-159D1D41EA36}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.845.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package2"
+  DTS:PackageType="5"
+  DTS:VersionBuild="22"
+  DTS:VersionGUID="{BC65CE6F-D7DA-4215-80CC-AAE71FD136EB}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DT03IGN.Jupiter]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{AEE5B487-289D-4423-A219-886AE7C35370}"
+      DTS:ObjectName="DESKTOP-DT03IGN.Jupiter">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DT03IGN;Initial Catalog=Jupiter;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package2-{AEE5B487-289D-4423-A219-886AE7C35370}DESKTOP-DT03IGN.Jupiter;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DT03IGN.Jupiter 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{FBB2D4BD-E80B-4A1F-AF06-81AFB32E26F1}"
+      DTS:ObjectName="DESKTOP-DT03IGN.Jupiter 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DT03IGN;Initial Catalog=Jupiter;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package2-{FBB2D4BD-E80B-4A1F-AF06-81AFB32E26F1}DESKTOP-DT03IGN.Jupiter 1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DT03IGN.METADATA]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{585BF2EE-43CA-4E19-B375-E179F9828E9C}"
+      DTS:ObjectName="DESKTOP-DT03IGN.METADATA">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DT03IGN;Initial Catalog=METADATA;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package2-{585BF2EE-43CA-4E19-B375-E179F9828E9C}DESKTOP-DT03IGN.METADATA;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-DT03IGN.Stage]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{86DF78B3-2CAC-4048-9917-19358D86ACC4}"
+      DTS:ObjectName="DESKTOP-DT03IGN.Stage">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-DT03IGN;Initial Catalog=Stage;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package2-{86DF78B3-2CAC-4048-9917-19358D86ACC4}DESKTOP-DT03IGN.Stage;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{26976ECD-C6AD-4D09-B247-33F3AFF0EEFD}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="ngaycapnhatN"
+      DTS:ObjectName="nuoc">
+      <DTS:VariableValue
+        DTS:DataType="7">10/18/2022 10:33:15 AM</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{FCEA7715-607D-426F-8AA1-A0453B06B589}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="NuocNCN">
+      <DTS:VariableValue
+        DTS:DataType="7">5/17/2011 10:11:12 PM</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{F9F77DCC-47DD-4648-BAE7-86DDBB17478C}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="NuocNgayCapNhat">
+      <DTS:VariableValue
+        DTS:DataType="7">10/18/2022 10:33:15 AM</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Dump data CuaHang to Stage"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{192940FF-DDA3-4BDA-B3F3-D96F2E8458B3}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Dump data CuaHang to Stage"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Dump data CuaHang to Stage\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Nuoc_Jupiter_stage]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Dump data CuaHang to Stage\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-DT03IGN.Stage]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-DT03IGN.Stage]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Dump data CuaHang to Stage\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Dump data CuaHang to Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TrangThai]"
+                      cachedDataType="i4"
+                      cachedName="TrangThai"
+                      externalMetadataColumnId="Package\Dump data CuaHang to Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TrangThai]"
+                      lineageId="Package\Dump data CuaHang to Stage\OLE DB Source.Outputs[OLE DB Source Output].Columns[TrangThai]" />
+                    <inputColumn
+                      refId="Package\Dump data CuaHang to Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MaNuoc]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="4"
+                      cachedName="MaNuoc"
+                      externalMetadataColumnId="Package\Dump data CuaHang to Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MaNuoc]"
+                      lineageId="Package\Dump data CuaHang to Stage\OLE DB Source.Outputs[OLE DB Source Output].Columns[MaNuoc]" />
+                    <inputColumn
+                      refId="Package\Dump data CuaHang to Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TenNuoc]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="TenNuoc"
+                      externalMetadataColumnId="Package\Dump data CuaHang to Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TenNuoc]"
+                      lineageId="Package\Dump data CuaHang to Stage\OLE DB Source.Outputs[OLE DB Source Output].Columns[TenNuoc]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Dump data CuaHang to Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MaNuoc]"
+                      codePage="1252"
+                      dataType="str"
+                      length="4"
+                      name="MaNuoc" />
+                    <externalMetadataColumn
+                      refId="Package\Dump data CuaHang to Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TenNuoc]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="TenNuoc" />
+                    <externalMetadataColumn
+                      refId="Package\Dump data CuaHang to Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TrangThai]"
+                      dataType="i4"
+                      name="TrangThai" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Dump data CuaHang to Stage\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Dump data CuaHang to Stage\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Dump data CuaHang to Stage\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Dump data CuaHang to Stage\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Dump data CuaHang to Stage\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Dump data CuaHang to Stage\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Dump data CuaHang to Stage\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT * FROM Nuoc_Jupiter WHERE ((NgayTao &lt; GETDATE() and NgayTao&gt;?) or (NgayCapNhat&lt;GETDATE() and NgayCapNhat&gt;?))</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping">"Parameter0:Input",{FCEA7715-607D-426F-8AA1-A0453B06B589};"Parameter1:Input",{FCEA7715-607D-426F-8AA1-A0453B06B589};</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Dump data CuaHang to Stage\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-DT03IGN.Jupiter]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-DT03IGN.Jupiter]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Dump data CuaHang to Stage\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Dump data CuaHang to Stage\OLE DB Source.Outputs[OLE DB Source Output].Columns[NgayTao]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Dump data CuaHang to Stage\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[NgayTao]"
+                      lineageId="Package\Dump data CuaHang to Stage\OLE DB Source.Outputs[OLE DB Source Output].Columns[NgayTao]"
+                      name="NgayTao"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Dump data CuaHang to Stage\OLE DB Source.Outputs[OLE DB Source Output].Columns[NgayCapNhat]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Dump data CuaHang to Stage\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[NgayCapNhat]"
+                      lineageId="Package\Dump data CuaHang to Stage\OLE DB Source.Outputs[OLE DB Source Output].Columns[NgayCapNhat]"
+                      name="NgayCapNhat"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Dump data CuaHang to Stage\OLE DB Source.Outputs[OLE DB Source Output].Columns[TrangThai]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Dump data CuaHang to Stage\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[TrangThai]"
+                      lineageId="Package\Dump data CuaHang to Stage\OLE DB Source.Outputs[OLE DB Source Output].Columns[TrangThai]"
+                      name="TrangThai"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Dump data CuaHang to Stage\OLE DB Source.Outputs[OLE DB Source Output].Columns[MaNuoc]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Dump data CuaHang to Stage\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MaNuoc]"
+                      length="4"
+                      lineageId="Package\Dump data CuaHang to Stage\OLE DB Source.Outputs[OLE DB Source Output].Columns[MaNuoc]"
+                      name="MaNuoc"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Dump data CuaHang to Stage\OLE DB Source.Outputs[OLE DB Source Output].Columns[TenNuoc]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Dump data CuaHang to Stage\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[TenNuoc]"
+                      length="50"
+                      lineageId="Package\Dump data CuaHang to Stage\OLE DB Source.Outputs[OLE DB Source Output].Columns[TenNuoc]"
+                      name="TenNuoc"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Dump data CuaHang to Stage\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[NgayTao]"
+                      dataType="dbTimeStamp"
+                      name="NgayTao" />
+                    <externalMetadataColumn
+                      refId="Package\Dump data CuaHang to Stage\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[NgayCapNhat]"
+                      dataType="dbTimeStamp"
+                      name="NgayCapNhat" />
+                    <externalMetadataColumn
+                      refId="Package\Dump data CuaHang to Stage\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[TrangThai]"
+                      dataType="i4"
+                      name="TrangThai" />
+                    <externalMetadataColumn
+                      refId="Package\Dump data CuaHang to Stage\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MaNuoc]"
+                      codePage="1252"
+                      dataType="str"
+                      length="4"
+                      name="MaNuoc" />
+                    <externalMetadataColumn
+                      refId="Package\Dump data CuaHang to Stage\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[TenNuoc]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="TenNuoc" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Dump data CuaHang to Stage\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Dump data CuaHang to Stage\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MaNuoc]"
+                      codePage="1252"
+                      dataType="str"
+                      length="4"
+                      lineageId="Package\Dump data CuaHang to Stage\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MaNuoc]"
+                      name="MaNuoc" />
+                    <outputColumn
+                      refId="Package\Dump data CuaHang to Stage\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[TenNuoc]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Dump data CuaHang to Stage\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[TenNuoc]"
+                      name="TenNuoc" />
+                    <outputColumn
+                      refId="Package\Dump data CuaHang to Stage\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[NgayTao]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Dump data CuaHang to Stage\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[NgayTao]"
+                      name="NgayTao" />
+                    <outputColumn
+                      refId="Package\Dump data CuaHang to Stage\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[NgayCapNhat]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Dump data CuaHang to Stage\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[NgayCapNhat]"
+                      name="NgayCapNhat" />
+                    <outputColumn
+                      refId="Package\Dump data CuaHang to Stage\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[TrangThai]"
+                      dataType="i4"
+                      lineageId="Package\Dump data CuaHang to Stage\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[TrangThai]"
+                      name="TrangThai" />
+                    <outputColumn
+                      refId="Package\Dump data CuaHang to Stage\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Dump data CuaHang to Stage\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Dump data CuaHang to Stage\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Dump data CuaHang to Stage\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Dump data CuaHang to Stage.Paths[OLE DB Source Output]"
+              endId="Package\Dump data CuaHang to Stage\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\Dump data CuaHang to Stage\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Get NgayCapNhap Nuoc"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{D96419C8-C361-4FA3-A276-EF61B4A975E7}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Get NgayCapNhap Nuoc"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{585BF2EE-43CA-4E19-B375-E179F9828E9C}"
+          SQLTask:SqlStatementSource="SELECT NgayCapNhat&#xA;FROM   Data_Flow&#xA;WHERE (TenBang = 'jupiter')"
+          SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ResultBinding
+            SQLTask:ResultName="NgayCapNhat"
+            SQLTask:DtsVariableName="User::NuocNCN" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\TRUNCATE Nuoc_Jupyter_stage"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{818bc517-6bde-4a3b-9412-77e83237c269}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="TRUNCATE Nuoc_Jupyter_stage"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{86DF78B3-2CAC-4048-9917-19358D86ACC4}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE Nuoc_Jupiter_stage" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\update metadata"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{D82613DA-3D4C-417F-9A3E-29A60DBC93F8}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="update metadata"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{585BF2EE-43CA-4E19-B375-E179F9828E9C}"
+          SQLTask:SqlStatementSource="UPDATE Data_Flow SET  ngaycapnhat = GETDATE() WHERE TenBang  = 'jupiter'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{BED675B5-E96F-459F-AB0D-A451F4DDC282}"
+      DTS:From="Package\TRUNCATE Nuoc_Jupyter_stage"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Get NgayCapNhap Nuoc" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{A7E90E4A-8B2E-451E-8F57-F771512754B6}"
+      DTS:From="Package\Get NgayCapNhap Nuoc"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\Dump data CuaHang to Stage" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{49C8E91B-D313-4894-8C04-A8978E7B6759}"
+      DTS:From="Package\Dump data CuaHang to Stage"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\update metadata" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="222.666666666667,42.6666666666667"
+          Id="Package\Dump data CuaHang to Stage"
+          TopLeft="255.624996190891,240.824564945114" />
+        <NodeLayout
+          Size="197.333333333334,42.6666666666667"
+          Id="Package\Get NgayCapNhap Nuoc"
+          TopLeft="240.416663084179,153.017545748505" />
+        <NodeLayout
+          Size="238.666666666667,42.6666666666667"
+          Id="Package\TRUNCATE Nuoc_Jupyter_stage"
+          TopLeft="238.680551998938,63.8596503248065" />
+        <NodeLayout
+          Size="160,42.6666666666667"
+          Id="Package\update metadata"
+          TopLeft="259.999996125698,307.877197786161" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="358.013885332271,106.526316991473">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-18.9305555814257,46.4912287570318"
+              Start="0,0"
+              End="-18.9305555814257,38.9912287570318">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.2456143785159" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.2456143785159"
+                    Point2="0,23.2456143785159"
+                    Point3="-4,23.2456143785159" />
+                  <mssgle:LineSegment
+                    End="-14.9305555814257,23.2456143785159" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-14.9305555814257,23.2456143785159"
+                    Point2="-18.9305555814257,23.2456143785159"
+                    Point3="-18.9305555814257,27.2456143785159" />
+                  <mssgle:LineSegment
+                    End="-18.9305555814257,38.9912287570318" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="339.083329750846,195.684212415172">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="27.8749997733781,45.1403525299424"
+              Start="0,0"
+              End="27.8749997733781,37.6403525299424">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18.5701762649712" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,18.5701762649712"
+                    Point2="0,22.5701762649712"
+                    Point3="4,22.5701762649712" />
+                  <mssgle:LineSegment
+                    End="23.8749997733781,22.5701762649712" />
+                  <mssgle:CubicBezierSegment
+                    Point1="23.8749997733781,22.5701762649712"
+                    Point2="27.8749997733781,22.5701762649712"
+                    Point3="27.8749997733781,26.5701762649712" />
+                  <mssgle:LineSegment
+                    End="27.8749997733781,37.6403525299424" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="366.958329524224,283.491231611781">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-26.9583333985259,24.3859661743801"
+              Start="0,0"
+              End="-26.9583333985259,16.8859661743801">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,8.19298308719004" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,8.19298308719004"
+                    Point2="0,12.19298308719"
+                    Point3="-4,12.19298308719" />
+                  <mssgle:LineSegment
+                    End="-22.9583333985259,12.19298308719" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-22.9583333985259,12.19298308719"
+                    Point2="-26.9583333985259,12.19298308719"
+                    Point3="-26.9583333985259,16.19298308719" />
+                  <mssgle:LineSegment
+                    End="-26.9583333985259,16.8859661743801" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Dump data CuaHang to Stage">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="154.666666666667,42.6666666666667"
+          Id="Package\Dump data CuaHang to Stage\OLE DB Source"
+          TopLeft="376,107" />
+        <NodeLayout
+          Size="174.666666666667,42.6666666666667"
+          Id="Package\Dump data CuaHang to Stage\OLE DB Destination"
+          TopLeft="370,210" />
+        <EdgeLayout
+          Id="Package\Dump data CuaHang to Stage.Paths[OLE DB Source Output]"
+          TopLeft="455.333333333333,149.666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60.3333333333333"
+              Start="0,0"
+              End="0,52.8333333333333">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.8333333333333" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-18.28857421875,21.6935221354167,36.5771484375,9.4462890625"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Dump data CuaHang to Stage\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Dump data CuaHang to Stage\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
